@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astra Designer — Portfólio Criativo</title>
+  <meta name="description" content="Portfólio de Logos, Banners, Barrinhas e GIFs do servidor Astra Designer.">
+  <meta property="og:title" content="Astra Designer — Portfólio Criativo">
+  <meta property="og:description" content="Logos, Banners, Barrinhas e GIFs para destacar sua marca e servidor.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/favicon.png">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Astra Designer</div>
+    <nav class="nav">
+      <a href="#inicio">Início</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato" class="btn-discord">Discord</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Alternar tema">🌙</button>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <h1>Astra Designer — Portfólio Criativo</h1>
+    <p>Logos, Banners, Barrinhas e GIFs para destacar sua marca e seu servidor.</p>
+    <a href="https://discord.gg/BExBHtHTY4" target="_blank" class="btn-primary">Entrar no servidor</a>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portfólio</h2>
+    <div class="filters">
+      <button data-filter="Todos" class="active">Todos</button>
+      <button data-filter="Logos">Logos</button>
+      <button data-filter="Banners">Banners</button>
+      <button data-filter="Barrinhas">Barrinhas</button>
+      <button data-filter="GIFs">GIFs</button>
+    </div>
+    <div id="portfolio-grid" class="grid"></div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section id="equipe" class="equipe">
+    <h2>Nossa Equipe</h2>
+    <div class="grid equipe-grid">
+      <div class="card">
+        <img src="https://cdn.discordapp.com/avatars/1384805651556995198/b1c3be41a34ebfc35948abe3443d0c60.png?size=2048" alt="Foto de Astra">
+        <h3>Astra</h3>
+        <p>Dono & Designer Profissional</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.discordapp.com/avatars/1220521588311719968/0ea94567ed3dc0e758655bce98cc8e38.png?size=2048" alt="Foto de Knx">
+        <h3>Knx</h3>
+        <p>Designer Iniciante</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.discordapp.com/avatars/1288666971440676976/bc82860210a33d45dd92bd950af1bd95.png?size=" alt="Foto de Mini Green">
+        <h3>Mini Green</h3>
+        <p>Designer Profissional</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA DISCORD -->
+  <section id="contato" class="cta-discord">
+    <h2>Participe da Comunidade</h2>
+    <a href="https://discord.gg/BExBHtHTY4" target="_blank" class="btn-primary">Entrar no servidor</a>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <p>© Astra Designer. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="lightbox" class="lightbox hidden">
+    <button id="lightbox-close" aria-label="Fechar">✖</button>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-desc"></p>
+    <button id="prev" aria-label="Anterior">⟨</button>
+    <button id="next" aria-label="Próximo">⟩</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
